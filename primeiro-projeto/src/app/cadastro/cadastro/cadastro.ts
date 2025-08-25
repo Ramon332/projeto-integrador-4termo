@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './cadastro.css'
 })
 export class Cadastro {
-
+  nome: String = 'Ramon';
 }

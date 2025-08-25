@@ -4,8 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'livros',
-    loadChildren: () => import('./livros/livros-module').then(m => m.LivrosModule)
+    loadChildren: () => import('./livros/livros-module').then(m => m.LivrosModule),
+  },
+  {
+    path: 'contador',
+    loadChildren: () => import('./contador/contador-module').then(m => m.ContadorModule),
   }
+  
 ];
 
 @NgModule({
