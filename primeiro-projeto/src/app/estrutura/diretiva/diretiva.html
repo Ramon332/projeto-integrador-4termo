@@ -1,0 +1,11 @@
+<p>Lista de itens</p>
+
+<button (click)="visualizar()">ExibirLista</button>
+
+<ul *ngIf="exibirLista">
+  <li *ngFor="let curso of cursos">
+    {{ curso.id }} , {{ curso.nome }} , {{curso.ativo}} , {{curso.inativo}}
+  </li>
+</ul>
+
+
