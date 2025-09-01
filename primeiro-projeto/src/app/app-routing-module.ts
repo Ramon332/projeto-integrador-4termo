@@ -13,8 +13,15 @@ const routes: Routes = [
   {
     path: 'estrutura',
     loadChildren: () => import('./estrutura/estrutura-module').then(m => m.EstruturaModule),
-  }
-  
+  },
+  {
+    path: 'sharedmodule',
+    loadChildren: () => import('./sharedmodule/sharedmodule-module').then(m => m.SharedmoduleModule)
+  },
+  {
+    path: 'produtosmodule',
+    loadChildren: () => import('./produtosmodule/produtosmodule-module').then(m => m.ProdutosmoduleModule)
+  },
 ];
 
 @NgModule({
