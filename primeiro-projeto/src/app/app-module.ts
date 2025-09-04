@@ -1,9 +1,11 @@
 import { NgModule, provideBrowserGlobalErrorListeners, provideZonelessChangeDetection } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { ProdutosmoduleModule } from './produtosmodule/produtosmodule-module';
+import { ProdutoModule } from './produto/produto-module';
+
+
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import { ProdutosmoduleModule } from './produtosmodule/produtosmodule-module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ProdutosmoduleModule,
+    ProdutoModule,
+    RouterModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

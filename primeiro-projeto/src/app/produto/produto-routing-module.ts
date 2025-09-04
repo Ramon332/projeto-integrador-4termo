@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { BotaoComponent } from './botao-component/botao-component';
+import { ProdutoComponent } from './produto-component/produto-component';
 
 const routes: Routes = [
   {
-    path: 'botao', component: BotaoComponent
+    path: '', component: ProdutoComponent
   }
 ];
 
@@ -12,4 +12,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class SharedmoduleRoutingModule { }
+export class ProdutoRoutingModule { }

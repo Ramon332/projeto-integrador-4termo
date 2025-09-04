@@ -15,16 +15,12 @@ const routes: Routes = [
     loadChildren: () => import('./estrutura/estrutura-module').then(m => m.EstruturaModule),
   },
   {
-    path: 'sharedmodule',
-    loadChildren: () => import('./sharedmodule/sharedmodule-module').then(m => m.SharedmoduleModule)
-  },
-  {
-    path: 'produtosmodule',
-    loadChildren: () => import('./produtosmodule/produtosmodule-module').then(m => m.ProdutosmoduleModule)
-  },
-  {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro-module').then(m => m.CadastroModule)
+  },
+  {
+    path: 'produto',
+    loadChildren: () => import('./produto/produto-module').then(m => m.ProdutoModule)
   }
 ];
 

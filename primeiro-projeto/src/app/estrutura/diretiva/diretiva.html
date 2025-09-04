@@ -1,9 +1,9 @@
 <p>Lista de itens</p>
 
-<!-- Botão para mostrar/ocultar lista -->
+
 <button (click)="visualizar()">{{ exibirLista ? 'Ocultar' : 'Mostrar' }} Lista</button>
 
-<!-- Lista de cursos -->
+
 <ul *ngIf="exibirLista">
   <li *ngFor="let curso of cursos"
       [class.ativo]="curso.ativo"
@@ -13,7 +13,7 @@
   </li>
 </ul>
 
-<!-- Botões de ajuste de fonte -->
+
 <div *ngIf="exibirLista" style="margin-top: 10px;">
   <button (click)="aumentarFonte()">+</button>
   <button (click)="diminuirFonte()">-</button>
