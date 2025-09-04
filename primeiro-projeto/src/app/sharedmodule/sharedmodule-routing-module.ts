@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BotaoComponent } from './botao-component/botao-component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: 'botao', component: BotaoComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

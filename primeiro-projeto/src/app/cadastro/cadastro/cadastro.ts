@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './cadastro.css'
 })
 export class Cadastro {
-  nome: String = 'Ramon';
+  longText = `The Chihuahua is a Mexican breed of toy dog. It is named for the
+  Mexican state of Chihuahua and is among the smallest of all dog breeds. It is
+  usually kept as a companion animal or for showing.`;
 }

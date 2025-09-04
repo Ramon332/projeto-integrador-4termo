@@ -7,11 +7,11 @@ import { EstruturaRoutingModule } from './estrutura-routing-module';
 
 @NgModule({
   declarations: [
-    
   ],
   imports: [
     CommonModule,
-    EstruturaRoutingModule
+    EstruturaRoutingModule,
+    CommonModule
   ]
 })
 export class EstruturaModule { }

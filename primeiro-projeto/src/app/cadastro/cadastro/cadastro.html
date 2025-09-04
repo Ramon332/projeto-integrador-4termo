@@ -1,1 +1,18 @@
-<p>Bem vindo {{nome}}!</p>
+<mat-toolbar style="background-color: aqua;">
+  <span>My Application</span>
+</mat-toolbar>
+<mat-card style="max-width: 400px;">
+  <mat-card-header>
+    <mat-card-title style="color: aqua; font-size: 40px;">Chihuahua</mat-card-title> 
+  </mat-card-header>
+  <mat-card-content>
+    <p>{{longText}}</p>
+  </mat-card-content>
+  <mat-card-footer style="padding: 16px;" style="color: aqua;">
+    <mat-chip-set aria-label="Chihuahua traits">
+      <mat-chip>charming</mat-chip>
+      <mat-chip>graceful</mat-chip>
+      <mat-chip>sassy</mat-chip>
+    </mat-chip-set>
+  </mat-card-footer>
+</mat-card>
