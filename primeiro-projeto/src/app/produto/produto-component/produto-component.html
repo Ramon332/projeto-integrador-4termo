@@ -25,7 +25,7 @@
       <td>{{ produto.estoque }}</td>
       <td [ngClass]="{ 
             'disponivel': produto.estoque > 0, 
-            'indisponivel': produto.estoque === 0 
+            'indisponivel': produto.estoque == 0 
           }">
         {{ produto.estoque > 0 ? 'Disponível' : 'Indisponível' }}
       </td>
