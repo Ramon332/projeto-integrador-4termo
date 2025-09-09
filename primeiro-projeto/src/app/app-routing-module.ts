@@ -21,7 +21,11 @@ const routes: Routes = [
   {
     path: 'produto',
     loadChildren: () => import('./produto/produto-module').then(m => m.ProdutoModule)
-  }
+  },
+  {
+    path: 'dados',
+    loadChildren: () => import('./dados/dados-module').then(m => m.DadosModule)
+  },
 ];
 
 @NgModule({
