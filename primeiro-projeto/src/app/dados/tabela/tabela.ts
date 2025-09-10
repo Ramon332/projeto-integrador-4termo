@@ -18,7 +18,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
   styleUrl: './tabela.css'
 })
 export class Tabela {
-  displayedColumns: string[] = ['nome', 'quantidade'];
+  displayedColumns: string[] = ['nome', 'quantidade', 'botoes'];
   dataSource = ELEMENT_DATA;
 
 }
+

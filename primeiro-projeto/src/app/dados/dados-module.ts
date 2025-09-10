@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { DadosRoutingModule } from './dados-routing-module';
 import { Tabela } from './tabela/tabela';
 import {MatTableModule} from '@angular/material/table';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import {MatTableModule} from '@angular/material/table';
   imports: [
     CommonModule,
     DadosRoutingModule,
-    MatTableModule
+    MatTableModule,
+    MatButtonToggleModule
   ]
 })
 export class DadosModule { }
